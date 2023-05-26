@@ -1,0 +1,16 @@
+.contactDeleteBtn {
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 10px 0 10px 20px;
+  padding: 5px 10px;
+  color: black;
+  transition: color 350ms, background-color 350ms;
+  cursor: pointer;
+}
+
+.contactDeleteBtn:hover {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
