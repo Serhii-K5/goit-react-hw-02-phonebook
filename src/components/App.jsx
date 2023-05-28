@@ -5,8 +5,7 @@ import { ContactForm } from './ContactForm/ContactForm';
 import { Filter } from './Filter/Filter';
 import { ContactList } from './ContactList/ContactList';
 import { PhonebookImg } from './PhonebookImg/PhonebookImg';
-// import css from './Container/Container.module.css';
-import './Container/Container.module.css';
+import css from './styles/styles.module.css';
 
 export class App extends Component {
   state = {
@@ -59,30 +58,9 @@ export class App extends Component {
     const { filter } = this.state;
 
     return (      
-      <div   
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          height: '100vh', 
-          width: '55vw',
-          margin: '0 auto',
-          fontSize: 20,
-          color: '#010101',
-          maxWidth: '800px',
-        }}
-      >
+      <div className={css.container}>
         <h1 hidden>HW #2</h1>        
-        <div
-          style={{
-            boxShadow: '2px 4px 6px',
-            width: '100%',
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'center',
-          }}
-        >
+        <div className={css.containerPhonebookStyles}>
           <PhonebookImg />
           <section> 
             <h2>Phonebook</h2>
